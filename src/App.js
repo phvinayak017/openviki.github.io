@@ -13,7 +13,7 @@ function App() {
       <Router>
         <nav className='body'>
           <div className='mainpage'>
-            <h2 className='logo'><NavLink activeStyle={{ color: '#6421b5' }} to='/'>OPENVIKI</NavLink></h2>
+            <h2 className='logo'><NavLink activeStyle={{ color: '#6421b5' }} to='/openviki'>OPENVIKI</NavLink></h2>
             <ul className='header-nav'>
               {/* <li><NavLink activeStyle={{ color: 'blueviolet' }} to='/home'>Home</NavLink></li>
               <li><NavLink activeStyle={{ color: 'blueviolet' }} to='/about'>About</NavLink></li> */}
@@ -22,7 +22,7 @@ function App() {
               <li><NavLink activeStyle={{ color: '#fc37aa' }} to='/contact'>Contact</NavLink></li>
             </ul>
           </div>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/openviki' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/blogs' component={Blogs} />
